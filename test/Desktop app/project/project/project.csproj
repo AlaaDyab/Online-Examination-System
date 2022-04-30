@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FA100E4-F0AA-4D32-9B8D-3E6AC6191742}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\..\..\..\..\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\SSAS\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminpage.Designer.cs">
+      <DependentUpon>adminpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="instractorpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instractorpage.Designer.cs">
+      <DependentUpon>instractorpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="instractorsdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instractorsdata.Designer.cs">
+      <DependentUpon>instractorsdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineExaminationSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineExaminationSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="questions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="questions.Designer.cs">
+      <DependentUpon>questions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports.Designer.cs">
+      <DependentUpon>reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentcourse.Designer.cs">
+      <DependentUpon>studentcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentpage.Designer.cs">
+      <DependentUpon>studentpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentresult.Designer.cs">
+      <DependentUpon>studentresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentsdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentsdata.Designer.cs">
+      <DependentUpon>studentsdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yourresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yourresult.Designer.cs">
+      <DependentUpon>yourresult.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminpage.resx">
+      <DependentUpon>adminpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instractorpage.resx">
+      <DependentUpon>instractorpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instractorsdata.resx">
+      <DependentUpon>instractorsdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="questions.resx">
+      <DependentUpon>questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports.resx">
+      <DependentUpon>reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentcourse.resx">
+      <DependentUpon>studentcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentpage.resx">
+      <DependentUpon>studentpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentresult.resx">
+      <DependentUpon>studentresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentsdata.resx">
+      <DependentUpon>studentsdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yourresult.resx">
+      <DependentUpon>yourresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OnlineExaminationSystemDataSet.xsc">
+      <DependentUpon>OnlineExaminationSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OnlineExaminationSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnlineExaminationSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnlineExaminationSystemDataSet.xss">
+      <DependentUpon>OnlineExaminationSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
